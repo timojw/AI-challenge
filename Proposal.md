@@ -1,5 +1,4 @@
 # Project Proposal 
-Timo Maas
 ## Introduction Project
 This project aims to use the power of AI to enhance weightlifting and exercise routines, focusing specifically on a 20-year-old male weightlifting enthusiast. By leveraging AI's capabilities, we intend to develop a tailored approach that aligns with his fitness goals, body metrics, and personal preferences. The project will revolve around the concept of One Rep Max (1RM), a key measure in strength training, to create an optimized training strategy.
 
@@ -148,6 +147,23 @@ In summary, the project will concentrate on establishing a baseline strength lev
 - Body Metrics: Basic physical measurements such as weight and height, which are essential for 1RM estimations. Detailed body composition data, while helpful, is not critical within the project's scope.
 - 1RM Historical Data: If available, previous 1RM records to understand the progression and set a baseline for the current calculation.
 
+## Data Sources
+**Given the project's focus on calculating a one-time One Rep Max (1RM) for a specific individual, identifying suitable data sources is crucial. The data should be relevant, reliable, and accessible. Here are potential sources:**
+
+**Possible Available Datasets**
+- Research Datasets: Academic or research institutions may have publicly available datasets related to strength training and fitness.
+- Open Data Repositories: Platforms like Kaggle, Google Dataset Search, or UCI Machine Learning Repository might have relevant datasets.
+- Gym Database: If the gym where me and the stakeholder work out maintains digital records of members' workouts, this could be an invaluable source of recent and historical data.
+
+## Data Legality and Ethics
+**When sourcing data for an AI project, especially one involving personal fitness information, it is imperative to consider both legal and ethical aspects.**
+
+**Risks**
+
+-
+At this point I am actively searching for a dataset, and after carefull consideration I have decided to focus on searching for a publically available dataset. The chosen dataset is available for everyone and may be used for academic purposes. 
+
+
 # Analytic Approach
 **The next step in writing a convincing proposal is to define a specific goal and an approach for the project. Goals for AI-projects are usually some sort of predictions, named inferencing. The result of this step is to define the target variable of the prediction, the nature of the target variable and to find out which of the features from the data are good indicators for the chosen target variable. Ultimately the result of this step is also the deliverable of phase1 namely a project proposal.**
 
@@ -162,4 +178,4 @@ In summary, the project will concentrate on establishing a baseline strength lev
 - Instructure. (n.d.). *Domain Understanding* Retrieved November 10, 2023, from https://fhict.instructure.com/courses/13383/pages/domain-understanding?module_item_id=986262
 - Instructure. (n.d.). *Data Sourcing* Retrieved November 10, 2023, from https://fhict.instructure.com/courses/13383/pages/data-sourcing?module_item_id=986263
 - Instructure. (n.d.). *Analytic Approach* Retrieved November 10, 2023, from https://fhict.instructure.com/courses/13383/pages/analytic-approach?module_item_id=986264
-
+- Business Insights Blog. (2021, March 16). *5 Principles of data Ethics for business* Retrieved November 17, 2023, from https://online.hbs.edu/blog/post/data-ethics
