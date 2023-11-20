@@ -1,0 +1,231 @@
+<!DOCTYPE html><html><head>
+      <title>Proposal</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\timom\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="project-proposal">Project Proposal </h1>
+<h2 id="introduction-project">Introduction Project </h2>
+<p>This project aims to use the power of AI to enhance weightlifting and exercise routines, focusing specifically on a 20-year-old male weightlifting enthusiast. By leveraging AI's capabilities, we intend to develop a tailored approach that aligns with his fitness goals, body metrics, and personal preferences. The project will revolve around the concept of One Rep Max (1RM), a key measure in strength training, to create an optimized training strategy.</p>
+<h2 id="introduction-timo-maas">Introduction Timo Maas </h2>
+<p>Hello, I'm Timo Maas, a Computer Science student at Fontys ICT, typically immersed in the world of software engineering. This semester, I'm venturing beyond my comfort zone into the fascinating realm of artificial intelligence. As a dedicated weightlifter, my passion for fitness aligns perfectly with this project.</p>
+<p>My connection to the project extends beyond academic and professional interest; it's also deeply personal. I often train alongside the stakeholder of this project, who happens to be a friend and a gym partner. This close relationship has given me valuable insights into his fitness goals, challenges, and preferences – knowledge that's crucial for tailoring the AI model to his needs.</p>
+<p>What excites me most about this project is its dual benefit. While I'm developing this AI-driven training assistant for my friend, our similar body types and age mean that the insights and recommendations generated by the model will be directly applicable to my own training regimen as well. This unique position allows me to not only contribute to my friend's fitness journey but also to enhance my own, making this project a truly rewarding and personal endeavor.</p>
+<h1 id="domain-understanding">Domain Understanding </h1>
+<p><strong>Domain understanding is a fundamental aspect of AI project development, pivotal in shaping the direction, effectiveness, and relevance of the solutions provided. AI, as defined by Spruit &amp; Lytras (2018), is not just about the creation of analytical systems but is deeply rooted in the enhancement of the daily practices of domain experts. This enhancement necessitates a profound comprehension of the domain in question, attainable only through meticulous exploratory research.</strong></p>
+<h2 id="weightlifting-and-exercise">Weightlifting and Exercise </h2>
+<p>Weightlifting and exercise are really good for you in many ways. When you lift weights, you're not just making your muscles stonger. You're also helping your bones become stronger, which is important as you get older. This kind of exercise also helps your joints move better and can stop you from getting hurt doing everyday things.</p>
+<p>Exercise in general is great for your body and mind. When you do things like run, swim, or ride a bike, your heart gets healthier and your lungs get better at breathing. This kind of activity helps you keep a healthy weight and lowers your chance of getting sick with things like diabetes or heart problems. Exercise also helps your body fight off germs better.</p>
+<p>Working out is also good for your brain. It makes you feel happier because it releases special chemicals in your brain called endorphins. It can help you feel less stressed or worried, sleep better, and concentrate more. Plus, it can make you feel more positive.</p>
+<p>Exercising with other people, like in a class or a team, can also make you feel good because you get to make friends and be part of a group. This is really important for feeling happy and connected.</p>
+<p>So, weightlifting and exercise are not just about looking good. They are really important for keeping your whole body and mind healthy, stopping you from getting sick, making you feel happier, and helping you make friends. They are a big part of living a healthy and happy life.</p>
+<h2 id="understanding-one-rep-max-1rm">Understanding One Rep Max (1RM) </h2>
+<p>One Rep Max (1RM) is a cornerstone concept in weightlifting and strength training, representing the maximum amount of weight a person can lift for one repetition of a given exercise. It's a crucial metric, not just as a measure of strength, but also as a tool for structuring and progressing training programs.</p>
+<p>In the realm of weightlifting, 1RM is defined as the heaviest weight that can be lifted once with proper form. It is a direct measure of the maximal strength a person possesses for a specific exercise, like a squat, deadlift, or bench press. This metric is pivotal as it provides a clear and quantifiable benchmark of an individual's strength capabilities, serving as a foundation for setting training goals and tracking progress over time.</p>
+<p>Calculating 1RM can be done in two primary ways: direct measurement and estimation. The direct method involves physically lifting the heaviest weight possible for one repetition. While this approach is accurate, it's often impractical and risky, especially for inexperienced lifters. To mitigate these risks, several estimation methods have been developed. These involve lifting a submaximal weight for multiple repetitions and then using mathematical formulas to estimate the 1RM. The most common of these formulas include the Epley Formula and the Brzycki Formula, which use the number of repetitions performed with a certain weight to estimate 1RM.</p>
+<p>However, these estimation methods have their limitations. They can be less accurate for those with less lifting experience or for very high or low repetition ranges. The accuracy also varies depending on the specific exercise being performed. Despite these limitations, estimated 1RM is widely used because of its practicality and safety.</p>
+<p>The significance of 1RM in weightlifting extends beyond a simple measure of strength. It's intimately linked with training intensity and progression. For instance, many strength training programs prescribe exercises based on a percentage of an individual's 1RM. This allows for a tailored approach to training intensity, ensuring that the workouts are challenging yet achievable, and most importantly, safe.</p>
+<p>Moreover, 1RM plays a critical role in designing weightlifting programs. It aids in the creation of periodized training plans, which are structured to vary intensity and volume over time to maximize gains while minimizing the risk of overtraining and injury. By regularly assessing and updating an individual's 1RM, trainers and athletes can adjust training loads to align with improvements in strength, ensuring continual progression and adaptation.</p>
+<p>In summary, 1RM serves as a vital benchmark in weightlifting, offering a clear and objective measure of an athlete's maximal strength. Its role in calculating training intensity, monitoring progress, and designing effective weightlifting programs underscores its importance in the world of strength training. Despite the challenges in its calculation, 1RM remains a key metric for athletes and trainers alike, providing a foundation upon which to build and refine strength training regimens.</p>
+<h3 id="1rm-as-a-target-variable-in-ai-models">1RM as a Target Variable in AI Models </h3>
+<p>Choosing 1RM (One Rep Max) as a target variable in AI models for weightlifting and strength training is particularly insightful due to its quantifiable and objective nature. As a measure of the maximum weight a person can lift in a single repetition, 1RM provides a clear, numerical benchmark of an individual's strength. This straightforward quantification makes it an ideal candidate for AI modeling, as it offers a precise target for prediction and analysis.</p>
+<p>How does 1RM serve as a quantifiable and objective measure of strength?<br>
+What insights can be derived from analyzing 1RM data?<br>
+Predicting 1RM: Applications and Challenges</p>
+<p>What are the potential applications of predicting 1RM through AI?<br>
+What challenges arise in modeling and predicting 1RM accurately?</p>
+<h3 id="the-role-of-features-in-predicting-1rm">The Role of Features in Predicting 1RM </h3>
+<p>In the context of strength training and 1RM, understanding how various factors like age, gender, weight, height, and other personal attributes influence performance is crucial. This understanding becomes particularly relevant when considering the profile of a 20-year-old male who is actively engaged in weightlifting, with specific fitness goals centered around muscle building and strength enhancement.</p>
+<p><strong>Age and Strength:</strong><br>
+Age is a significant factor in strength training. In general, individuals in their late teens to late twenties, like our 20-year-old gym enthusiast, are often at a prime age for muscle development and strength gains. During these years, the body's response to resistance training is typically at its peak, making it an ideal time to focus on increasing 1RM. However, it's also important to recognize that as one ages, natural changes in muscle composition and recovery rates can impact the ability to sustain and improve 1RM. Thus, for someone in their early twenties, capitalizing on this phase for muscle building and strength training is both timely and beneficial.</p>
+<p><strong>Gender Differences in Strength:</strong><br>
+Physiological differences between genders play a crucial role in strength and 1RM. Men, typically, have a higher proportion of muscle mass due to hormonal differences, notably higher testosterone levels, which contribute to greater muscle hypertrophy and strength gains. This is particularly pertinent for our subject, as his gender aligns with these physiological advantages, potentially allowing for more significant improvements in specific areas like the chest, back, and arms, which he aims to develop.</p>
+<p><strong>Impact of Weight and Body Composition:</strong><br>
+Body weight and composition are critical in determining 1RM. Generally, a higher body weight, provided it's accompanied by proportional muscle mass, can contribute to lifting heavier weights. However, for our 20-year-old, weighing 71 kg with a BMI of 21.4, the focus might be on gaining muscle mass to improve his 1RM. While his current weight provides a good foundation, increasing muscle mass through targeted training and nutrition will be essential for enhancing his 1RM.</p>
+<p><strong>Role of Height in Lifting Performance:</strong><br>
+Height can influence 1RM, but its impact varies based on the exercise. For taller individuals, some exercises like deadlifts may offer mechanical advantages, whereas others like squats might present more of a challenge due to the greater range of motion required. At 182 cm, our subject's height falls within a range that offers both advantages and challenges in weightlifting, necessitating a tailored approach to training that maximizes his biomechanical strengths.</p>
+<p><strong>Other Influential Factors:</strong><br>
+Other aspects like training experience, muscle composition, and nutrition significantly affect 1RM. Given that our subject is very active, enjoys weightlifting, and has access to gym facilities, he is well-positioned to make progressive strength gains. His preference for structured routines mixed with varied workouts aligns well with the principles of progressive overload and adaptation, essential for improving 1RM. Furthermore, his commitment to a balanced diet with adequate protein intake will support muscle recovery and growth, directly impacting his 1RM potential.</p>
+<h2 id="interview-with-the-stakeholder">Interview with the Stakeholder </h2>
+<p><strong>The purpose of this interview is to gain a comprehensive understanding of the fitness habits, goals, and preferences of a young man deeply engaged in weightlifting. This information is crucial for tailoring a personalized machine learning algorithm that delivers a sort of training schedule that aligns with his specific needs and objectives. There is also some general information that needs to be gathered.</strong></p>
+<h3 id="general-information">General Information </h3>
+<ol>
+<li><strong>Gender:</strong> Male</li>
+<li><strong>Age:</strong> 20</li>
+<li><strong>Length (Height):</strong> 182 cm</li>
+<li><strong>Weight:</strong> 71 kg</li>
+<li><strong>BMI:</strong> 21.4</li>
+</ol>
+<h3 id="personal-fitness-goals-and-preferences">Personal Fitness Goals and Preferences </h3>
+<ol>
+<li>
+<p><strong>Primary Fitness Goals:</strong></p>
+<ul>
+<li><em>Response:</em> My primary fitness goals are to build muscle and increase overall strength.</li>
+</ul>
+</li>
+<li>
+<p><strong>Focus Areas in Bodybuilding:</strong></p>
+<ul>
+<li><em>Response:</em> I want to focus on developing my chest, back, and arms as specific muscle groups.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preferred Types of Exercise:</strong></p>
+<ul>
+<li><em>Response:</em> I enjoy weightlifting and strength training exercises. I find it satisfying to challenge myself with heavy weights and progressive resistance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disliked Exercises:</strong></p>
+<ul>
+<li><em>Response:</em> I dislike long bouts of cardio but understand the importance of cardio health, so I'm willing to incorporate shorter cardio sessions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Medical Conditions and Physical Limitations:</strong></p>
+<ul>
+<li><em>Response:</em> I don't have any pre-existing medical conditions, but I might need to be cautious about proper form and technique to prevent injuries.</li>
+</ul>
+</li>
+<li>
+<p><strong>Current Physical Activity Level:</strong></p>
+<ul>
+<li><em>Response:</em> I consider myself very active due to my regular gym workouts and an active lifestyle.</li>
+</ul>
+</li>
+<li>
+<p><strong>Access to Exercise Equipment:</strong></p>
+<ul>
+<li><em>Response:</em> I have access to a gym; I have equipment at home, but I prefer using gym equipment for my workouts.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preferred Duration of Workout Sessions:</strong></p>
+<ul>
+<li><em>Response:</em> I prefer my workout sessions to be around 60-90 minutes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preference for Solo or Group Workouts:</strong></p>
+<ul>
+<li><em>Response:</em> I usually work out alone but occasionally enjoy working out with friends who share similar fitness goals.</li>
+</ul>
+</li>
+<li>
+<p><strong>Workout Frequency:</strong></p>
+<ul>
+<li><em>Response:</em> I'm willing to dedicate about 5-6 days a week to exercise.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preferred Workout Structure:</strong></p>
+<ul>
+<li><em>Response:</em> I prefer a mix of structured routines and varied workouts to keep it interesting and challenging.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interest in Special Training Programs:</strong></p>
+<ul>
+<li><em>Response:</em> I'd like to include strength training as the primary focus, but I'm open to incorporating occasional high-intensity interval training (HIIT) for cardio and flexibility workouts for better overall performance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Progress Tracking Preferences:</strong></p>
+<ul>
+<li><em>Response:</em> I prefer to track my progress through tracking my lifting stats.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dietary Considerations:</strong></p>
+<ul>
+<li><em>Response:</em> I aim to maintain a balanced and nutritious diet with adequate protein intake to support muscle growth.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preferred Time for Exercise:</strong></p>
+<ul>
+<li><em>Response:</em> I prefer to work out in the early morning as I feel more energized during the day after the workout.</li>
+</ul>
+</li>
+</ol>
+<h2 id="tict">TICT </h2>
+<h1 id="data-sourcing">Data Sourcing </h1>
+<p><strong>Data sourcing is a crucial starting point for any AI project because the quality and quantity of the data you gather directly impact the performance, accuracy, and robustness of your AI model. The old adage "garbage in, garbage out" holds particularly true in the context of AI. Proper data sourcing ensures that the AI model learns meaningful patterns and relationships from the data, leading to better outcomes and insights.</strong></p>
+<h2 id="define-objectives-and-scope">Define Objectives and Scope </h2>
+<p><strong>Defining the scope of this project is essential to set clear boundaries and expectations.</strong></p>
+<p>Central to the project is the calculation of a one-time One Rep Max (1RM) for the subject, a 20-year-old male weightlifting enthusiast. It is important to note that this 1RM will be applied uniformly across all exercises, an approach that simplifies the process but admittedly does not account for variations in strength across different muscle groups. This assumption, while not entirely realistic, is a necessary compromise given the project's constraints and objectives.</p>
+<p>Another crucial aspect of the project scope is the decision to exclude nutrition from our considerations. While nutrition undeniably plays a significant role in fitness and strength training, its complexities and the need for highly individualized information make it beyond the purview of this specific project. This exclusion is a strategic choice to maintain focus and manageability.</p>
+<p>Additionally, it's important to clarify that the conversion of the calculated 1RM into a detailed training schedule is not included in the project scope. While the 1RM provides a foundational metric, the development of a tailored training regimen based on this value falls to the stakeholder. They have the option to utilize various available calculators and formulas to translate the 1RM into a practical workout plan. This delineation ensures the project remains focused and achievable within its defied parameters.</p>
+<p>In summary, the project will concentrate on establishing a baseline strength level through a one-time 1RM calculation, while consciously setting aside the aspects of individual muscle strength variability and nutrition. Additionally, the application of 1RM in creating a workout schedule, though critical, is designated as a task for the stakeholder, allowing the project to maintain a clear and focused scope.</p>
+<h2 id="data-characteristics">Data Characteristics </h2>
+<p><strong>Given the specific scope of the project, focusing on a one-time One Rep Max (1RM) calculation without delving into nutrition or detailed training schedule development, the type and volume of data needed are adjusted accordingly.</strong></p>
+<p><strong>Structured Data</strong></p>
+<ul>
+<li>Workout Logs: Limited to data that directly impacts 1RM calculations. This includes recent records of exercises, sets, repetitions, and weights lifted.</li>
+<li>Body Metrics: Basic physical measurements such as weight and height, which are essential for 1RM estimations. Detailed body composition data, while helpful, is not critical within the project's scope.</li>
+<li>1RM Historical Data: If available, previous 1RM records to understand the progression and set a baseline for the current calculation.</li>
+</ul>
+<h2 id="data-sources">Data Sources </h2>
+<p><strong>Given the project's focus on calculating a one-time One Rep Max (1RM) for a specific individual, identifying suitable data sources is crucial. The data should be relevant, reliable, and accessible. Here are potential sources:</strong></p>
+<p><strong>Possible Available Datasets</strong></p>
+<ul>
+<li>Research Datasets: Academic or research institutions may have publicly available datasets related to strength training and fitness.</li>
+<li>Open Data Repositories: Platforms like Kaggle, Google Dataset Search, or UCI Machine Learning Repository might have relevant datasets.</li>
+<li>Gym Database: If the gym where me and the stakeholder work out maintains digital records of members' workouts, this could be an invaluable source of recent and historical data.</li>
+</ul>
+<h2 id="data-legality-and-ethics">Data Legality and Ethics </h2>
+<p><strong>When sourcing data for an AI project, especially one involving personal fitness information, it is imperative to consider both legal and ethical aspects.</strong></p>
+<p>At this point I am actively searching for a dataset, and after carefull consideration I have decided to focus on searching for a publically available dataset. The chosen dataset is available for everyone and may be used for academic purposes.</p>
+<h1 id="analytic-approach">Analytic Approach </h1>
+<p><strong>The next step in writing a convincing proposal is to define a specific goal and an approach for the project. Goals for AI-projects are usually some sort of predictions, named inferencing. The result of this step is to define the target variable of the prediction, the nature of the target variable and to find out which of the features from the data are good indicato rs for the chosen target variable. Ultimately the result of this step is also the deliverable of phase1 namely a project proposal.</strong></p>
+<h2 id="target-variable">Target Variable </h2>
+<p><strong>The target variable is that one particular feature that you want to predict based on the other features.</strong></p>
+<p>As previously mentioned, the primary focus will be on determining the one-repetition maximum (1RM) for three distinct exercises: Bench Press, Leg Press, and Deadlift. Users will have the capability to input their body weight, which will then be utilized by the algorithm to accurately estimate their 1RM for each of these exercises.</p>
+<h2 id="nature-of-the-problem">Nature of the Problem </h2>
+<p><strong>Depending on the nature of your target variable, and thus the nature of the problem at hand, a suitable type of algorithm needs to be chosen. Choosing the "right tool for the job" is essential in obtaining high quality results.</strong></p>
+<p>Using a regression algorithm to predict the maximum weight someone can lift once (1RM) in exercises like Bench Press, Leg Press, and Deadlift is a good choice. This is because regression is good at estimating numbers based on things like body weight. It's easy to understand how it works. Plus, it has clear ways to check if it's doing a good job (Validation). So, regression is a great starting point for creating a tool that predicts 1RM accurately and clearly.</p>
+<h1 id="sources">Sources </h1>
+<ul>
+<li>Website, N. (2023, September 26). <em>Physical activity guidelines for adults aged 19 to 64.</em> <a href="http://nhs.uk">nhs.uk</a>. Retrieved November 13, 2023, from <a href="https://www.nhs.uk/live-well/exercise/exercise-guidelines/physical-activity-guidelines-for-adults-aged-19-to-64/">https://www.nhs.uk/live-well/exercise/exercise-guidelines/physical-activity-guidelines-for-adults-aged-19-to-64/</a></li>
+<li>Wikipedia contributors. (2023, October 17). <em>Weightlifting.</em> Wikipedia. Retrieved November 14, 2023, from <a href="https://en.wikipedia.org/wiki/Weightlifting">https://en.wikipedia.org/wiki/Weightlifting</a></li>
+<li>Cpt, T. R. B. (2022, May 31). <em>How To Calculate and Use Your 1-Rep Max.</em> Healthline. Retrieved November 14, 2023, from <a href="https://www.healthline.com/health/fitness/one-rep-max-how-to-calculate-and-use#what-it-is">https://www.healthline.com/health/fitness/one-rep-max-how-to-calculate-and-use#what-it-is</a></li>
+<li>Wikipedia contributors. (2023a, August 24). <em>One-repetition maximum.</em> Wikipedia. Retrieved November 14, 2023, from <a href="https://en.wikipedia.org/wiki/One-repetition_maximum">https://en.wikipedia.org/wiki/One-repetition_maximum</a></li>
+<li>Sweat. (2022, August 9). <em>How OneReP Max 1RM can Enhance your training.</em> SWEAT. Retrieved November 13, 2023, from <a href="https://www.sweat.com/blogs/fitness/1rm-one-rep-max">https://www.sweat.com/blogs/fitness/1rm-one-rep-max</a></li>
+<li>Instructure. (n.d.). <em>Domain Understanding</em> Retrieved November 10, 2023, from <a href="https://fhict.instructure.com/courses/13383/pages/domain-understanding?module_item_id=986262">https://fhict.instructure.com/courses/13383/pages/domain-understanding?module_item_id=986262</a></li>
+<li>Instructure. (n.d.). <em>Data Sourcing</em> Retrieved November 10, 2023, from <a href="https://fhict.instructure.com/courses/13383/pages/data-sourcing?module_item_id=986263">https://fhict.instructure.com/courses/13383/pages/data-sourcing?module_item_id=986263</a></li>
+<li>Instructure. (n.d.). <em>Analytic Approach</em> Retrieved November 10, 2023, from <a href="https://fhict.instructure.com/courses/13383/pages/analytic-approach?module_item_id=986264">https://fhict.instructure.com/courses/13383/pages/analytic-approach?module_item_id=986264</a></li>
+<li>Business Insights Blog. (2021, March 16). <em>5 Principles of data Ethics for business</em> Retrieved November 17, 2023, from <a href="https://online.hbs.edu/blog/post/data-ethics">https://online.hbs.edu/blog/post/data-ethics</a></li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
