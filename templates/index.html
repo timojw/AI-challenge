@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1RM Prediction</title>
+</head>
+<body>
+    <h2>Enter your Age, Sex, and Bodyweight</h2>
+    <form method="POST">
+        Age: <input type="number" name="age" required><br>
+        Bodyweight (kg): <input type="number" name="bodyweight" required><br>
+        <!-- Sex: <input type="text" name="sex" required><br> -->
+        <input type="submit" value="Predict 1RM">
+    </form>
+    {% if prediction is not none %}
+    <h3>Predicted 1RM: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
