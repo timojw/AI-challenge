@@ -7635,7 +7635,13 @@ None
 <span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 
-<span class="p">(</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+<span class="c1"># Creating a DataFrame to display the values</span>
+<span class="n">error_metrics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">"Metric"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Mean Squared Error (MSE)"</span><span class="p">,</span> <span class="s2">"R-squared (R²)"</span><span class="p">],</span>
+    <span class="s2">"Value"</span><span class="p">:</span> <span class="p">[</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">error_metrics</span>
 </pre></div>
 </div>
 </div>
@@ -7647,8 +7653,43 @@ None
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(1851.8136554598761, 0.21169797125852907)</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Mean Squared Error (MSE)</td>
+<td>1811.955537</td>
+</tr>
+<tr>
+<th>1</th>
+<td>R-squared (R²)</td>
+<td>0.213274</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7694,7 +7735,13 @@ None
 <span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 
-<span class="p">(</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+<span class="c1"># Creating a DataFrame to display the values</span>
+<span class="n">error_metrics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">"Metric"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Mean Squared Error (MSE)"</span><span class="p">,</span> <span class="s2">"R-squared (R²)"</span><span class="p">],</span>
+    <span class="s2">"Value"</span><span class="p">:</span> <span class="p">[</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">error_metrics</span>
 </pre></div>
 </div>
 </div>
@@ -7706,8 +7753,43 @@ None
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(1967.8554929201362, 0.16668992180686082)</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Mean Squared Error (MSE)</td>
+<td>1894.974923</td>
+</tr>
+<tr>
+<th>1</th>
+<td>R-squared (R²)</td>
+<td>0.177997</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7754,7 +7836,13 @@ None
 <span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
 <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 
-<span class="p">(</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+<span class="c1"># Creating a DataFrame to display the values</span>
+<span class="n">error_metrics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">"Metric"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Mean Squared Error (MSE)"</span><span class="p">,</span> <span class="s2">"R-squared (R²)"</span><span class="p">],</span>
+    <span class="s2">"Value"</span><span class="p">:</span> <span class="p">[</span><span class="n">mse</span><span class="p">,</span> <span class="n">r2</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">error_metrics</span>
 </pre></div>
 </div>
 </div>
@@ -7766,8 +7854,43 @@ None
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(1888.5484390330334, -0.405650396469478)</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Mean Squared Error (MSE)</td>
+<td>1886.644166</td>
+</tr>
+<tr>
+<th>1</th>
+<td>R-squared (R²)</td>
+<td>-0.418370</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7779,7 +7902,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h2><p>It appears that the models I've experimented with aren't performing as expected. Despite various attempts and configurations, the accuracy remains unsatisfactorily low, and the last model even yielded a negative R² score, which suggests there might be some issues in my approach. This leads me to believe that our current dataset might be insufficient for accurate predictions. Incorporating additional features, such as muscle mass, nutritional habits, and body length, could potentially enhance the model's predictive power and provide a more comprehensive understanding of the factors influencing the outcomes.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h2><p>It appears that the models I've experimented with aren't performing as expected. Despite various attempts and configurations, the accuracy remains unsatisfactorily low, and the last model even yielded a negative R² score, which suggests there might be some issues in my approach. This leads me to believe that our current dataset might be insufficient for accurate predictions. Incorporating additional features, such as muscle mass, nutritional habits, and body length, could potentially enhance the model's predictive power and provide a more comprehensive understanding of the factors influencing the outcomes. Other ways could be to use Grid Search or Random Search for hyperparameter tuning to improve the models.</p>
 </div>
 </div>
 </div>
