@@ -119,20 +119,21 @@ In summary, the project will concentrate on establishing a baseline strength lev
 **Structured Data**
 - Workout Logs: Limited to data that directly impacts 1RM calculations. This includes recent records of exercises, sets, repetitions, and weights lifted.
 - Body Metrics: Basic physical measurements such as weight and height, which are essential for 1RM estimations. Detailed body composition data, while helpful, is not critical within the project's scope.
-- 1RM Historical Data: If available, previous 1RM records to understand the progression and set a baseline for the current calculation.
+- 1RM Historical Data: If available, previous 1RM records to understand the progression and set a baseline for the current calculation. This could also mean the max amount of weight lifted in a weightlifting competition.
 
-## Data Sources
+## Data Sourcing
 **Given the project's focus on calculating a one-time One Rep Max (1RM) for a specific individual, identifying suitable data sources is crucial. The data should be relevant, reliable, and accessible. Here are potential sources:**
 
 **Possible Available Datasets**
 - Research Datasets: Academic or research institutions may have publicly available datasets related to strength training and fitness.
 - Open Data Repositories: Platforms like Kaggle, Google Dataset Search, or UCI Machine Learning Repository might have relevant datasets.
 - Gym Database: If the gym where me and the stakeholder work out maintains digital records of members' workouts, this could be an invaluable source of recent and historical data.
+- Weightlifting Competition Record: During weightlifting competitions the record about the lifted weights are usually well kept.
 
 ## Data Legality and Ethics
 **When sourcing data for an AI project, especially one involving personal fitness information, it is imperative to consider both legal and ethical aspects.**
 
-At this point I am actively searching for a dataset, and after carefull consideration I have decided to focus on searching for a publically available dataset. The chosen dataset is available for everyone and may be used for academic purposes. 
+At this point I am actively searching for a dataset, and after carefull consideration I have decided to focus on searching for a publically available dataset. The chosen dataset is available for everyone and may be used for academic purposes. Its a dataset with data from weightlifting competitions, ranging from amateurs to real proffesional weightlifters, this dataset will be relevant for my target audience.
 
 
 # Analytic Approach

@@ -8,11 +8,19 @@
     <form method="POST">
         Age: <input type="number" name="age" required><br>
         Bodyweight (kg): <input type="number" name="bodyweight" required><br>
-        <!-- Sex: <input type="text" name="sex" required><br> -->
+        Sex (Male = 1, Female = 0): <input type="number" name="sex" required><br>
         <input type="submit" value="Predict 1RM">
     </form>
-    {% if prediction is not none %}
-    <h3>Predicted 1RM: {{ prediction }}</h3>
+
+    {% if prediction_deadlift is not none %}
+    <h3>Predicted Deadlift 1RM: {{ prediction_deadlift }}</h3>
+    {% endif %}
+    {% if prediction_squat is not none %}
+    <h3>Predicted Squat 1RM: {{ prediction_squat }}</h3>
+    {% endif %}
+    {% if prediction_bench is not none %}
+    <h3>Predicted Bench Press 1RM: {{ prediction_bench }}</h3>
     {% endif %}
 </body>
 </html>
+
