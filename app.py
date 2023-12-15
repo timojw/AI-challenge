@@ -19,15 +19,16 @@ def index():
         # Load models and make predictions
         with open('model_deadlift.pkl', 'rb') as f:
             model_deadlift = pickle.load(f)
-        prediction_deadlift = model_deadlift.predict(input_data)[0]
+        prediction_deadlift = round(model_deadlift.predict(input_data)[0])
 
         with open('model_squat.pkl', 'rb') as f:
             model_squat = pickle.load(f)
-        prediction_squat = model_squat.predict(input_data)[0]
+        prediction_squat = round(model_squat.predict(input_data)[0])
 
         with open('model_bench.pkl', 'rb') as f:
             model_bench = pickle.load(f)
-        prediction_bench = model_bench.predict(input_data)[0]
+        prediction_bench = round(model_bench.predict(input_data)[0])
+
 
         # Return predictions to the template
         return render_template('index.html', prediction_deadlift=prediction_deadlift, 

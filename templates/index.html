@@ -2,25 +2,60 @@
 <html>
 <head>
     <title>1RM Prediction</title>
+    <style>
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label, input, select, .button-container {
+            display: inline-block;
+            vertical-align: top;
+        }
+        label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input, select {
+            width: 200px;
+        }
+        .button-container {
+            width: 360px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <h2>Enter your Age, Sex, and Bodyweight</h2>
     <form method="POST">
-        Age: <input type="number" name="age" required><br>
-        Bodyweight (kg): <input type="number" name="bodyweight" required><br>
-        Sex (Male = 1, Female = 0): <input type="number" name="sex" required><br>
-        <input type="submit" value="Predict 1RM">
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="bodyweight">Bodyweight (kg):</label>
+            <input type="number" name="bodyweight" required>
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select name="sex" required>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+        </div>
+        <div class="form-group button-container">
+            <label></label>
+            <input type="submit" value="Predict 1RM">
+        </div>
     </form>
 
     {% if prediction_deadlift is not none %}
-    <h3>Predicted Deadlift 1RM: {{ prediction_deadlift }}</h3>
+    <h3>Predicted Deadlift 1RM: {{ prediction_deadlift }} kg</h3>
     {% endif %}
     {% if prediction_squat is not none %}
-    <h3>Predicted Squat 1RM: {{ prediction_squat }}</h3>
+    <h3>Predicted Squat 1RM: {{ prediction_squat }} kg</h3>
     {% endif %}
     {% if prediction_bench is not none %}
-    <h3>Predicted Bench Press 1RM: {{ prediction_bench }}</h3>
+    <h3>Predicted Bench Press 1RM: {{ prediction_bench }} kg</h3>
     {% endif %}
 </body>
 </html>
-
